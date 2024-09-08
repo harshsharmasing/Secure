@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AES Encryption and Decryption</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AES Encryption and Decryption</h1>
+
+    <div class="input-section">
+      <label for="inputText">Enter Text for Encryption:</label>
+      <input type="text" id="inputText" placeholder="Enter text">
+      <button class="btn" onclick="encryptText()">Encrypt</button>
+    </div>
+
+    <div class="input-section">
+      <label for="decryptInputText">Enter Text for Decryption:</label>
+      <input type="text" id="decryptInputText" placeholder="Enter text">
+      <button class="btn" onclick="decryptText()">Decrypt</button>
+    </div>
+
+    <div class="input-section">
+      <label for="result">Result:</label>
+      <textarea id="result" readonly placeholder="Result will appear here"></textarea>
+      <button class="btn copy-btn" onclick="copyToClipboard()">Copy to Clipboard</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="#info" class="footer-option"><</a>
+    <a href="#purpose" class="footer-option">Harsh Sharma</a>
+    <a href="#info" class="footer-option">harsh.rshh@gmail.com</a>
+    <a href="#contactinfo" class="footer-option">+91 97985-31147</a>
+    <a href="javascript:void(0)" class="footer-option" onclick="delayedRedirect()">></a>
+  </div>
+
+  <!-- Loading message -->
+  <div id="loadingMessage" class="loading">Loading...</div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

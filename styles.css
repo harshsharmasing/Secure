@@ -1,0 +1,138 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('abcd.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    color: #00ffcc;
+}
+
+.container {
+    text-align: left;
+    padding: 20px;
+    max-width: 400px;
+    margin-left: 180px;
+    margin-top: 110px;
+    background-color: rgba(14, 23, 38, 0.6);
+    border: 2px solid #00ffcc;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00ffcc;
+}
+
+/* Input section styles */
+.input-section {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Input and textarea styles */
+input[type="text"],
+textarea {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #00ffcc;
+    border-radius: 5px;
+    background-color: #0e1726;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #c4c9d8;
+}
+
+/* Button styles */
+button.btn {
+    padding: 8px 15px;
+    border: 1px solid #00ffcc;
+    background-color: transparent;
+    color: #00ffcc;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #00ffcc;
+    color: #0a0e1a;
+}
+
+.copy-btn {
+    margin-top: 10px;
+}
+
+/* Footer styles */
+.footer {
+    width: 100%;
+    background-color: rgba(14, 23, 38, 0.2);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 180px;
+}
+
+.footer-option {
+    color: #00ffcc;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.footer-option:hover {
+    color: #fff;
+    background-color: rgba(0, 255, 204, 0.2);
+    border-radius: 4px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-left: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Loading message styles */
+.loading {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 8px;
+}
